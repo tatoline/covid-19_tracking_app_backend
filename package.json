@@ -1,0 +1,19 @@
+{
+  "name": "covid-19_tracking_app_backend",
+  "version": "1.0.0",
+  "description": "backend proxy server for covid-19 tracking app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tatoline",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,5 +1,5 @@
 // defining the server port
-const port = 5000
+const port = process.env.PORT || 5000
 
 // initializing installed dependencies
 const express = require('express')

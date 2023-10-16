@@ -8,11 +8,11 @@ const axios = require('axios')
 const app = express()
 const cors = require('cors')
 app.use(cors({
-    origin: 'https://covid.taylanmiroglu.com'
+    origin: process.env.NODE_ENV == 'development '? '*' : 'https://covid.taylanmiroglu.com'
 }))
 
 // listening for port 5000
-app.listen(5000, ()=> console.log(`Server is running on ${port}` ))
+app.listen(5000, ()=> console.log(`Server is running on ${port} ${process.env.NODE_ENV ? '( ' + process.env.NODE_ENV + ')' : ''}` ))
 
 // API request for Country statistics
 app.get('/corona/country', (req,res)=>{    
